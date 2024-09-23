@@ -11,5 +11,5 @@ pip install git+https://github.com/yourusername/jynxzzz-utils.git
 
 or from PyPi:
 
-pip install jynxzzz==0.1
+pip install jynxzzz
 
