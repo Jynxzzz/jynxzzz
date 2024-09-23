@@ -6,12 +6,10 @@ Welcome to `Jynxzzz Utils`! This package contains a collection of utility functi
 ## Installation
 You can install the package directly from GitHub using pip:
 
-```bash
 pip install git+https://github.com/yourusername/jynxzzz-utils.git
 
 
 or from PyPi:
 
-```bash
 pip install jynxzzz==0.1
 
