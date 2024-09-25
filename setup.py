@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="jynxzzz",
-    version="0.2",
+    version="0.4",
     description="A collection of custom functions for data analysis",
     author="Xingnan Zhou",
     author_email="zhouxingnan2016@gmail.com",
