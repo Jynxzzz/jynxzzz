@@ -24,14 +24,10 @@ My work focuses on **trajectory prediction** and **3D perception** for autonomou
 
 ## Featured Projects
 
-### Autonomous Driving & Research
-- **[WayGraph](https://github.com/Jynxzzz/waygraph)** — GPS-free localization of 89K Waymo scenarios onto OpenStreetMap via star-pattern topology fingerprinting
-- **[Scenario Dreamer](https://github.com/Jynxzzz/scenario-dreamer-jynxzzz)** — Scenario generation and Transformer attention visualization on Waymo Open Motion Dataset
-- **[Turn-Aware LSTM](https://github.com/Jynxzzz/Turn-Aware-LSTM_SUPP)** — Supplementary code for published trajectory prediction paper (15-20% FDE reduction at turns)
-
-### Full-Stack Engineering
-- **[NudiLab](https://nudilab.art)** — Production e-commerce platform for 3D-printed sculptural jewelry. Built with Next.js 16, React 19, Three.js, Stripe, and Supabase. Features interactive 3D product viewer with SLA print simulation, multi-material pricing, order tracking, and admin dashboard.
-- **[obsicat.com](https://obsicat.com)** — My research portfolio. Pure HTML/CSS, zero dependencies, deployed on Vercel.
+- **[Lane Graph Conditioning](https://github.com/Jynxzzz/scenario-dreamer-jynxzzz)** — Injects local lane topology into trajectory prediction models via waterflow BFS + cross-attention. Up to 27% lower minADE, 43% miss rate reduction on 89K Waymo scenarios.
+- **[Spatial Attention Viz](https://github.com/Jynxzzz/spatial-attention-viz)** — Reveals safety blind spots in Transformer-based prediction: 73% less attention to cyclists, 60% less to pedestrians. Counterfactual analysis on Waymo.
+- **[Dual-Camera LiDAR Fusion](https://github.com/Jynxzzz/dual-camera-lidar-fusion)** — Symmetric drone + dashboard camera late fusion for 3D detection. +4.4% mAP on PointPillar, +3.3% on CenterPoint in CARLA.
+- **[Turn-Aware LSTM](https://github.com/Jynxzzz/Turn-Aware-LSTM_SUPP)** — Encoder-decoder with one-hot turn labels for trajectory forecasting at intersections. 15-20% FDE reduction on turning maneuvers (ATS 2025, published).
 
 ## Tech Stack
 
