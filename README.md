@@ -19,10 +19,10 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 | Paper | Venue | Status |
 |-------|-------|--------|
 | [Turn-Aware LSTM for Vehicle Trajectory Forecasting](https://obsicat.com/turn-aware-lstm.html) | Advances in Transportation Studies | **Published 2025** |
-| [Local Lane Graph Conditioning for Trajectory Prediction](https://obsicat.com/lane-conditioning.html) | MDPI Sustainability | Under Review |
-| [Discovering Safety Blind Spots Through Spatial Attention Visualization](https://obsicat.com/attention-visualization.html) | MDPI Sustainability | Under Review |
-| [Network Dreamer: Bridging Scenario-Level and Network-Level Simulation](https://obsicat.com/waygraph.html) | MDPI Sustainability / IEEE ITSC | Submitted 2026 |
-| [Dual-Camera LiDAR Fusion for Occlusion-Robust 3D Detection](https://obsicat.com/bev-lidar-fusion.html) | MDPI Sustainability | Submitted 2026 |
+| [Local Lane Graph Conditioning for Trajectory Prediction](https://obsicat.com/lane-conditioning.html) | MDPI Sustainability | Preparing |
+| [Discovering Safety Blind Spots Through Spatial Attention Visualization](https://obsicat.com/attention-visualization.html) | MDPI Sustainability | Preparing |
+| [Network Dreamer: Bridging Scenario-Level and Network-Level Simulation](https://obsicat.com/waygraph.html) | MDPI Sustainability / IEEE ITSC | Preparing |
+| [Dual-Camera LiDAR Fusion for Occlusion-Robust 3D Detection](https://obsicat.com/bev-lidar-fusion.html) | MDPI Sustainability | Preparing |
 
 ## Featured Projects
 
@@ -45,4 +45,5 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 ## Links
 
 [![Website](https://img.shields.io/badge/obsicat.com-Portfolio-1a2940?style=flat-square)](https://obsicat.com)
+[![NudiLab](https://img.shields.io/badge/NudiLab-nudilab.art-d98c70?style=flat-square)](https://nudilab.art)
 [![Email](https://img.shields.io/badge/Email-zhouxingnan2016@gmail.com-4ECDC4?style=flat-square)](mailto:zhouxingnan2016@gmail.com)
