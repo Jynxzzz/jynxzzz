@@ -6,9 +6,10 @@ I build models that help autonomous vehicles predict trajectories and make safer
 
 ## Research
 
-My work spans **trajectory prediction**, **attention-based safety analysis**, **3D perception**, and **network-level traffic simulation**, primarily on the [Waymo Open Motion Dataset](https://waymo.com/open/) (89K+ intersection scenarios).
+My work spans **trajectory prediction**, **attention-based safety analysis**, **3D perception**, **network-level traffic simulation**, and **VLM-based end-to-end driving**, primarily on the [Waymo Open Motion Dataset](https://waymo.com/open/) (89K+ intersection scenarios).
 
 **Key contributions:**
+- **VLM end-to-end driving** — fine-tuned Qwen3-VL-4B with QLoRA on 399K Waymo+CoVLA frames, achieving −18% overall ADE (−34.4% on mild turns) on a single RTX 4090
 - **Lane graph conditioning** — architecture-agnostic module that injects local lane topology into prediction models, achieving +26.7% minADE improvement on 89K Waymo scenarios
 - **GPS-free localization** — matching 70K+ driving scenarios to OpenStreetMap road networks with 90% top-1 accuracy via star-pattern topology fingerprinting
 - **Attention safety analysis** — Transformer attention visualization revealing 63% higher miss rates for cyclists than vehicles — a critical safety blind spot, validated through counterfactual analysis
@@ -23,6 +24,7 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 | [Discovering Safety Blind Spots Through Spatial Attention Visualization](https://obsicat.com/attention-visualization.html) | — | In Preparation |
 | [Network Dreamer: Bridging Scenario-Level and Network-Level Simulation](https://obsicat.com/waygraph.html) | — | In Preparation |
 | [Dual-Camera LiDAR Fusion for Occlusion-Robust 3D Detection](https://obsicat.com/bev-lidar-fusion.html) | — | In Preparation |
+| [Reproducing Poutine: VLM-Based End-to-End Driving](https://obsicat.com/poutine-e2e.html) | — | Ongoing |
 
 ## Featured Projects
 
@@ -33,6 +35,7 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 | [Spatial Attention Viz](https://github.com/Jynxzzz/spatial-attention-viz) | Counterfactual analysis of Transformer attention maps in bird's-eye-view | 63% higher cyclist miss rate, tunnel vision failure mode |
 | [Dual-Camera LiDAR Fusion](https://github.com/Jynxzzz/dual-camera-lidar-fusion) | Symmetric drone + dashboard camera late fusion for occluded 3D detection | +4.4% mAP (PointPillar), −13% false positives |
 | [Turn-Aware LSTM](https://github.com/Jynxzzz/Turn-Aware-LSTM_SUPP) | Encoder-decoder with one-hot turn labels for intersection trajectory forecasting | 15–20% FDE ↓ on turning maneuvers |
+| [Poutine E2E](https://obsicat.com/poutine-e2e.html) | Qwen3-VL-4B + QLoRA end-to-end driving on single RTX 4090 | −18% ADE overall, −34.4% on mild turns |
 
 ## Tech Stack
 
