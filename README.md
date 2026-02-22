@@ -10,7 +10,7 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 
 **Key contributions:**
 - **Lane graph conditioning** — architecture-agnostic module that injects local lane topology into prediction models, achieving +26.7% minADE improvement on 89K Waymo scenarios
-- **GPS-free localization** — matching 70K+ driving scenarios to OpenStreetMap road networks with 90% top-1 accuracy via star-pattern topology fingerprinting
+- **Training data geographic audit** — mapped 70K+ Waymo scenarios onto OpenStreetMap via topology fingerprinting (90% top-1 accuracy) to reveal what intersection types the dataset covers and where geographic blind spots exist
 - **Attention safety analysis** — Transformer attention visualization revealing 63% higher miss rates for cyclists than vehicles — a critical safety blind spot, validated through counterfactual analysis
 - **Dual-camera LiDAR fusion** — symmetric late fusion improving mAP by +4.4%, statistically validated across 10 seeds in CARLA simulation
 
@@ -29,7 +29,7 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 | Project | Description | Highlights |
 |---------|-------------|------------|
 | [Lane Graph Conditioning](https://github.com/Jynxzzz/lane-graph-conditioning) | Waterflow BFS extracts local lane graphs, cross-attention fuses topology into any predictor | +26.7% minADE, +43% miss rate ↓ on 89K Waymo scenes |
-| [Network Dreamer](https://github.com/Jynxzzz/network-dreamer) | GPS-free localization framework placing Waymo scenarios onto OpenStreetMap road networks | 90% top-1 accuracy, 70K scenarios, 17K matched routes |
+| [Network Dreamer](https://github.com/Jynxzzz/network-dreamer) | Maps Waymo scenarios onto OpenStreetMap to audit dataset geographic coverage and identify underrepresented intersection types | 90% top-1 accuracy, 70K scenarios, 17K routes |
 | [Spatial Attention Viz](https://github.com/Jynxzzz/spatial-attention-viz) | Counterfactual analysis of Transformer attention maps in bird's-eye-view | 63% higher cyclist miss rate, tunnel vision failure mode |
 | [Dual-Camera LiDAR Fusion](https://github.com/Jynxzzz/dual-camera-lidar-fusion) | Symmetric drone + dashboard camera late fusion for occluded 3D detection | +4.4% mAP (PointPillar), −13% false positives |
 | [Turn-Aware LSTM](https://github.com/Jynxzzz/Turn-Aware-LSTM_SUPP) | Encoder-decoder with one-hot turn labels for intersection trajectory forecasting | 15–20% FDE ↓ on turning maneuvers |
