@@ -9,7 +9,7 @@ I build models that help autonomous vehicles predict trajectories and make safer
 My work spans **trajectory prediction**, **attention-based safety analysis**, **3D perception**, **network-level traffic simulation**, and **VLM-based end-to-end driving**, primarily on the [Waymo Open Motion Dataset](https://waymo.com/open/) (89K+ intersection scenarios).
 
 **Key contributions:**
-- **VLM end-to-end driving** — reproduced [Poutine](https://arxiv.org/abs/2502.01637) (Qwen3-VL + QLoRA) and extended evaluation to intersection-type-stratified analysis: −18% overall ADE, with sharp turns remaining the hardest regime (−2.3%)
+- **VLM end-to-end driving** — single-GPU reproduction of [Poutine](https://arxiv.org/abs/2502.01637) Stage 1 (VLT pre-training) on RTX 4090: built full training pipeline with Qwen3-VL-4B + QLoRA on 399K Waymo+CoVLA frames, with intersection-type-stratified evaluation
 - **Lane graph conditioning** — architecture-agnostic module that injects local lane topology into prediction models, achieving +26.7% minADE improvement on 89K Waymo scenarios
 - **GPS-free localization** — matching 70K+ driving scenarios to OpenStreetMap road networks with 90% top-1 accuracy via star-pattern topology fingerprinting
 - **Attention safety analysis** — Transformer attention visualization revealing 63% higher miss rates for cyclists than vehicles — a critical safety blind spot, validated through counterfactual analysis
@@ -24,7 +24,7 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 | [Discovering Safety Blind Spots Through Spatial Attention Visualization](https://obsicat.com/attention-visualization.html) | — | In Preparation |
 | [Network Dreamer: Bridging Scenario-Level and Network-Level Simulation](https://obsicat.com/waygraph.html) | — | In Preparation |
 | [Dual-Camera LiDAR Fusion for Occlusion-Robust 3D Detection](https://obsicat.com/bev-lidar-fusion.html) | — | In Preparation |
-| [Reproducing Poutine: VLM E2E Driving by Intersection Type](https://obsicat.com/poutine-e2e.html) | — | Ongoing |
+| [Reproducing Poutine: Single-GPU VLM E2E Driving Pipeline](https://obsicat.com/poutine-e2e.html) | — | Ongoing |
 
 ## Featured Projects
 
@@ -35,7 +35,7 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 | [Spatial Attention Viz](https://github.com/Jynxzzz/spatial-attention-viz) | Counterfactual analysis of Transformer attention maps in bird's-eye-view | 63% higher cyclist miss rate, tunnel vision failure mode |
 | [Dual-Camera LiDAR Fusion](https://github.com/Jynxzzz/dual-camera-lidar-fusion) | Symmetric drone + dashboard camera late fusion for occluded 3D detection | +4.4% mAP (PointPillar), −13% false positives |
 | [Turn-Aware LSTM](https://github.com/Jynxzzz/Turn-Aware-LSTM_SUPP) | Encoder-decoder with one-hot turn labels for intersection trajectory forecasting | 15–20% FDE ↓ on turning maneuvers |
-| [Reproducing Poutine](https://obsicat.com/poutine-e2e.html) | Reproduction of [Poutine](https://arxiv.org/abs/2502.01637) with intersection-type-stratified evaluation on Waymo | −34.4% mild turns, −31.4% straight, −2.3% sharp turns |
+| [Reproducing Poutine](https://obsicat.com/poutine-e2e.html) | Single-GPU reproduction of [Poutine](https://arxiv.org/abs/2502.01637) Stage 1: full VLT pipeline on RTX 4090 | 399K frames, QLoRA fine-tuning, GRPO next |
 
 ## Tech Stack
 
