@@ -45,15 +45,7 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 
 **Tools:** Linux, Git, Neovim, Blender
 
-## Publications
-
-| Paper | Venue | Status |
-|-------|-------|--------|
-| [Turn-Aware LSTM for Vehicle Trajectory Forecasting](https://obsicat.com/turn-aware-lstm.html) | Advances in Transportation Studies | **Published 2025** |
-| [Local Lane Graph Conditioning for Trajectory Prediction](https://obsicat.com/lane-conditioning.html) | — | In Preparation |
-| [Discovering Safety Blind Spots Through Spatial Attention Visualization](https://obsicat.com/attention-visualization.html) | — | In Preparation |
-| [Network Dreamer: Bridging Scenario-Level and Network-Level Simulation](https://obsicat.com/waygraph.html) | — | In Preparation |
-| [Dual-Camera LiDAR Fusion for Occlusion-Robust 3D Detection](https://obsicat.com/bev-lidar-fusion.html) | — | In Preparation |
+*Published: [Turn-Aware LSTM for Vehicle Trajectory Forecasting](https://obsicat.com/turn-aware-lstm.html) (Advances in Transportation Studies, 2025) · See [obsicat.com](https://obsicat.com) for all projects and papers.*
 
 ## Links
 
