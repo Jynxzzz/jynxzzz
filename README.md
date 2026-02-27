@@ -34,7 +34,17 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 | [Dual-Camera LiDAR Fusion](https://github.com/Jynxzzz/dual-camera-lidar-fusion) | Symmetric drone + dashboard camera late fusion for occluded 3D detection | +4.4% mAP (PointPillar), −13% false positives |
 | [Turn-Aware LSTM](https://github.com/Jynxzzz/Turn-Aware-LSTM_SUPP) | Encoder-decoder with one-hot turn labels for intersection trajectory forecasting | 15–20% FDE ↓ on turning maneuvers |
 
-*Also exploring VLM-based end-to-end driving — reproducing [Poutine](https://arxiv.org/abs/2502.01637) Stage 1 on a single GPU ([details](https://obsicat.com/poutine-e2e.html)).*
+## Waymo E2E Driving Challenge
+
+**[Ranked #55](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772130932807000/)** on the [Waymo Open Dataset End-to-End Driving Challenge](https://waymo.com/open/challenges/e2e-driving/) — first submission, Stage 1 pre-training only, no reinforcement learning yet.
+
+| | |
+|---|---|
+| **Method** | [CTL-Drive](https://github.com/Jynxzzz/CTL-Drive) — Qwen3-VL-4B + QLoRA, CoVLA pre-training, intent conditioning, turn-aware fallback |
+| **Training** | 795K frames (WOD-E2E + CoVLA), single RTX 4090 for Stage 1 |
+| **Compute** | Scaling to [Google TPU Research Cloud](https://sites.research.google/trc/about/) — 288 TPU chips (v4-32, v5e-64, v6e-64), ~152 PFLOPS |
+| **Next** | Stage 1b fine-tuning + GRPO reinforcement learning on TPU pods |
+| **Details** | [Project page](https://obsicat.com/poutine-e2e.html) · [Leaderboard](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772130932807000/) |
 
 ## Tech Stack
 
