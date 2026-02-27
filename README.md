@@ -6,7 +6,7 @@ I build models that help autonomous vehicles predict trajectories and make safer
 
 ## Waymo E2E Driving Challenge
 
-**[Ranked #55](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772130932807000/)** on the [Waymo Open Dataset End-to-End Driving Challenge](https://waymo.com/open/challenges/e2e-driving/) — first submission, Stage 1 pre-training only, no reinforcement learning yet.
+**[Ranked #55](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772130932807000/)** on the [Waymo Open Dataset End-to-End Driving Challenge](https://waymo.com/open/challenges/e2e-driving/) — trained on a single RTX 4090, Stage 1 pre-training only, no reinforcement learning yet.
 
 | | |
 |---|---|
