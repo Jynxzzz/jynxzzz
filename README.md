@@ -2,7 +2,7 @@
 
 **PhD Candidate in Transportation Engineering @ Concordia University, Montreal**
 
-I build models that help autonomous vehicles predict trajectories and make safer decisions — from single-intersection forecasting to city-scale traffic simulation.
+My research focuses on end-to-end autonomous driving and trajectory prediction. Our model **CTL-Drive** ranks **#15 on the Waymo E2E Driving Challenge** — trained on a single RTX 4090 with no reinforcement learning. My broader work spans lane graph conditioning, LiDAR-camera fusion, and attention-based safety analysis, across Waymo, CARLA, and VISSIM environments.
 
 ## Waymo E2E Driving Challenge
 
