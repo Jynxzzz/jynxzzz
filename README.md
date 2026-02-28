@@ -6,14 +6,20 @@ I build models that help autonomous vehicles predict trajectories and make safer
 
 ## Waymo E2E Driving Challenge
 
-**[Ranked #15](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772305880072000/)** on the [Waymo Open Dataset End-to-End Driving Challenge](https://waymo.com/open/challenges/e2e-driving/) — trained on a single RTX 4090, Stage 1 pre-training only, no reinforcement learning yet.
+**[Ranked #15](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772305880072000/)** on the [Waymo Open Dataset End-to-End Driving Challenge](https://waymo.com/open/challenges/e2e-driving/) — trained on a single RTX 4090, no reinforcement learning, within 0.11m ADE of #1.
+
+| Metric | Ours (#15) | #1 (Poutine) |
+|--------|-----------|--------------|
+| ADE @ 3s | **1.28m** | 1.17m |
+| ADE @ 5s | **2.99m** | 2.60m |
+| RFS | **7.70** | 7.99 |
 
 | | |
 |---|---|
-| **Method** | [CTL-Drive](https://github.com/Jynxzzz/CTL-Drive) — Qwen3-VL-4B + QLoRA, CoVLA pre-training, intent conditioning, turn-aware fallback |
-| **Training** | 795K frames (WOD-E2E + CoVLA), single RTX 4090 for Stage 1 |
-| **Compute** | Scaling to [Google TPU Research Cloud](https://sites.research.google/trc/about/) — 288 TPU chips (v4-32, v5e-64, v6e-64), ~152 PFLOPS |
-| **Next** | Stage 1b fine-tuning + GRPO reinforcement learning on TPU pods |
+| **Method** | [CTL-Drive](https://github.com/Jynxzzz/CTL-Drive) — Qwen3-VL-4B + QLoRA, intent conditioning, turn-aware fallback |
+| **Training** | Stage 1a (228K CoVLA) + Stage 1b (90K WOD-E2E), single RTX 4090 |
+| **Compute** | Scaling to [Google TPU Research Cloud](https://sites.research.google/trc/about/) — 288 TPU chips, ~152 PFLOPS |
+| **Next** | GRPO reinforcement learning on TPU pods → targeting RFS > 7.99 |
 | **Details** | [Project page](https://obsicat.com/poutine-e2e.html) · [Leaderboard](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772305880072000/) |
 
 ## Research
