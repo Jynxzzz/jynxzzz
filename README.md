@@ -6,7 +6,7 @@ I build models that help autonomous vehicles predict trajectories and make safer
 
 ## Waymo E2E Driving Challenge
 
-**[Ranked #55](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772130932807000/)** on the [Waymo Open Dataset End-to-End Driving Challenge](https://waymo.com/open/challenges/e2e-driving/) — trained on a single RTX 4090, Stage 1 pre-training only, no reinforcement learning yet.
+**[Ranked #15](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772305880072000/)** on the [Waymo Open Dataset End-to-End Driving Challenge](https://waymo.com/open/challenges/e2e-driving/) — trained on a single RTX 4090, Stage 1 pre-training only, no reinforcement learning yet.
 
 | | |
 |---|---|
@@ -14,7 +14,7 @@ I build models that help autonomous vehicles predict trajectories and make safer
 | **Training** | 795K frames (WOD-E2E + CoVLA), single RTX 4090 for Stage 1 |
 | **Compute** | Scaling to [Google TPU Research Cloud](https://sites.research.google/trc/about/) — 288 TPU chips (v4-32, v5e-64, v6e-64), ~152 PFLOPS |
 | **Next** | Stage 1b fine-tuning + GRPO reinforcement learning on TPU pods |
-| **Details** | [Project page](https://obsicat.com/poutine-e2e.html) · [Leaderboard](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772130932807000/) |
+| **Details** | [Project page](https://obsicat.com/poutine-e2e.html) · [Leaderboard](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772305880072000/) |
 
 ## Research
 
@@ -30,7 +30,7 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 
 | Project | Description | Highlights |
 |---------|-------------|------------|
-| [CTL-Drive](https://github.com/Jynxzzz/CTL-Drive) | VLM-based end-to-end driving on Waymo Challenge | **#55 leaderboard**, Google TPU Research Cloud |
+| [CTL-Drive](https://github.com/Jynxzzz/CTL-Drive) | VLM-based end-to-end driving on Waymo Challenge | **#15 leaderboard**, Google TPU Research Cloud |
 | [Lane Graph Conditioning](https://github.com/Jynxzzz/lane-graph-conditioning) | Waterflow BFS extracts local lane graphs, cross-attention fuses topology into any predictor | +26.7% minADE, +43% miss rate ↓ on 89K Waymo scenes |
 | [Network Dreamer](https://github.com/Jynxzzz/network-dreamer) | Maps Waymo scenarios onto OpenStreetMap to audit dataset geographic coverage and identify underrepresented intersection types | 90% top-1 accuracy, 70K scenarios, 17K routes |
 | [Spatial Attention Viz](https://github.com/Jynxzzz/spatial-attention-viz) | Counterfactual analysis of Transformer attention maps in bird's-eye-view | 63% higher cyclist miss rate, tunnel vision failure mode |
