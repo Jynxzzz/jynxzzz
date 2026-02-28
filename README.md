@@ -16,7 +16,7 @@ I build models that help autonomous vehicles predict trajectories and make safer
 
 | | |
 |---|---|
-| **Method** | [CTL-Drive](https://github.com/Jynxzzz/CTL-Drive) — Qwen3-VL-4B + QLoRA, intent conditioning, turn-aware fallback |
+| **Method** | [CTL-Drive](https://github.com/Jynxzzz/CTL-Drive) — Qwen3-VL-4B + QLoRA, CoVLA pre-training, proto intent, turn-aware fallback |
 | **Training** | Stage 1a (228K CoVLA) + Stage 1b (90K WOD-E2E), single RTX 4090 |
 | **Compute** | Scaling to [Google TPU Research Cloud](https://sites.research.google/trc/about/) — 288 TPU chips, ~152 PFLOPS |
 | **Next** | GRPO reinforcement learning on TPU pods → targeting top 5 |
