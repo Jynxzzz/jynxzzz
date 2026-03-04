@@ -17,7 +17,8 @@ My research focuses on end-to-end autonomous driving and trajectory prediction. 
 | | |
 |---|---|
 | **Method** | [CTL-Drive](https://github.com/Jynxzzz/CTL-Drive) — Qwen3-VL-4B + QLoRA, CoVLA pre-training, proto intent, turn-aware fallback |
-| **Training** | Stage 1a (228K CoVLA) + Stage 1b (90K WOD-E2E), single RTX 4090 |
+| **Training** | Stage 1a (379K CoVLA) + Stage 1b (401K WOD-E2E), single RTX 4090 |
+| **Annotation** | 780K frames via Qwen3.5-397B on 20× H100 GPUs ([DRAC](https://alliancecan.ca) Nibi cluster, ~19h) |
 | **Compute** | Scaling to [Google TPU Research Cloud](https://sites.research.google/trc/about/) — 288 TPU chips, ~152 PFLOPS |
 | **Next** | GRPO reinforcement learning on TPU pods → targeting top 5 |
 | **Details** | [Project page](https://obsicat.com/poutine-e2e.html) · [Leaderboard](https://waymo.com/open/challenges/e2e-driving/results/b34f2412-5a6e/1772305880072000/) |
