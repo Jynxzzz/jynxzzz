@@ -38,6 +38,7 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 | Project | Description | Highlights |
 |---------|-------------|------------|
 | [CTL-Drive](https://github.com/Jynxzzz/CTL-Drive) | VLM-based end-to-end driving on Waymo Challenge | **#15 leaderboard**, Google TPU Research Cloud |
+| [Sampling Cascade](https://github.com/Jynxzzz/sampling-cascade) | Training-time safety audit: 91% of scenario cells empty, 34.9% pedestrian miss rate | IEEE T-IV under review |
 | [Lane Graph Conditioning](https://github.com/Jynxzzz/lane-graph-conditioning) | Waterflow BFS extracts local lane graphs, cross-attention fuses topology into any predictor | +26.7% minADE, +43% miss rate ↓ on 89K Waymo scenes |
 | [Network Dreamer](https://github.com/Jynxzzz/network-dreamer) | Maps Waymo scenarios onto OpenStreetMap to audit dataset geographic coverage and identify underrepresented intersection types | 90% top-1 accuracy, 70K scenarios, 17K routes |
 | [Spatial Attention Viz](https://github.com/Jynxzzz/spatial-attention-viz) | Counterfactual analysis of Transformer attention maps in bird's-eye-view | 63% higher cyclist miss rate, tunnel vision failure mode |
