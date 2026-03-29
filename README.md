@@ -2,7 +2,7 @@
 
 **PhD Candidate in Transportation Engineering @ Concordia University, Montreal**
 
-My research focuses on end-to-end autonomous driving and trajectory prediction. Our model **CTL-Drive** ranks **#15 on the Waymo E2E Driving Challenge** — trained on a single RTX 4090. My broader work spans lane graph conditioning, LiDAR-camera fusion, and attention-based safety analysis, across Waymo, CARLA, and VISSIM environments.
+My research focuses on end-to-end autonomous driving and trajectory prediction. Our model **CTL-Drive** ranks **#15 on the Waymo E2E Driving Challenge** — trained on a single RTX 4090. My work on lane graph conditioning received the **ITE Canada Student Paper Award**. Broader research spans LiDAR-camera fusion and attention-based safety analysis, across Waymo, CARLA, and VISSIM environments.
 
 ## Waymo E2E Driving Challenge
 
@@ -28,7 +28,7 @@ My research focuses on end-to-end autonomous driving and trajectory prediction. 
 My work spans **trajectory prediction**, **attention-based safety analysis**, **3D perception**, and **network-level traffic simulation**, primarily on the [Waymo Open Motion Dataset](https://waymo.com/open/) (89K+ intersection scenarios).
 
 **Key contributions:**
-- **Lane graph conditioning** — architecture-agnostic module that injects local lane topology into prediction models, achieving +26.7% minADE improvement on 89K Waymo scenarios
+- **Lane graph conditioning** (**ITE Canada Student Paper Award**) — architecture-agnostic module that injects local lane topology into prediction models, achieving +26.7% minADE improvement on 89K Waymo scenarios
 - **Training data geographic audit** — mapped 70K+ Waymo scenarios onto OpenStreetMap via topology fingerprinting (90% top-1 accuracy) to reveal what intersection types the dataset covers and where geographic blind spots exist
 - **Attention safety analysis** — Transformer attention visualization revealing 63% higher miss rates for cyclists than vehicles — a critical safety blind spot, validated through counterfactual analysis
 - **Dual-camera LiDAR fusion** — symmetric late fusion improving mAP by +4.4%, statistically validated across 10 seeds in CARLA simulation
@@ -39,7 +39,7 @@ My work spans **trajectory prediction**, **attention-based safety analysis**, **
 |---------|-------------|------------|
 | [CTL-Drive](https://github.com/Jynxzzz/CTL-Drive) | VLM-based end-to-end driving on Waymo Challenge | **#15 leaderboard**, Google TPU Research Cloud |
 | [Sampling Cascade](https://github.com/Jynxzzz/sampling-cascade) | Training-time safety audit: 91% of scenario cells empty, 34.9% pedestrian miss rate | IEEE T-IV under review |
-| [Lane Graph Conditioning](https://github.com/Jynxzzz/lane-graph-conditioning) | Waterflow BFS extracts local lane graphs, cross-attention fuses topology into any predictor | +26.7% minADE, +43% miss rate ↓ on 89K Waymo scenes |
+| [Lane Graph Conditioning](https://github.com/Jynxzzz/lane-graph-conditioning) | Waterflow BFS extracts local lane graphs, cross-attention fuses topology into any predictor | **ITE Canada Student Paper Award**, +26.7% minADE |
 | [Network Dreamer](https://github.com/Jynxzzz/network-dreamer) | Maps Waymo scenarios onto OpenStreetMap to audit dataset geographic coverage and identify underrepresented intersection types | 90% top-1 accuracy, 70K scenarios, 17K routes |
 | [Spatial Attention Viz](https://github.com/Jynxzzz/spatial-attention-viz) | Counterfactual analysis of Transformer attention maps in bird's-eye-view | 63% higher cyclist miss rate, tunnel vision failure mode |
 | [Dual-Camera LiDAR Fusion](https://github.com/Jynxzzz/dual-camera-lidar-fusion) | Symmetric drone + dashboard camera late fusion for occluded 3D detection | +4.4% mAP (PointPillar), −13% false positives |
